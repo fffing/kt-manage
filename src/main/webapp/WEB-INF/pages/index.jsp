@@ -28,10 +28,43 @@
 	top: 0px;
 	background: linear-gradient(#00CACA, #000093);
 }
-a:link {color: #FFFFFF}		/* 未访问的链接 */
-a:visited {color: #B9B9FF}	/* 已访问的链接 */
-a:hover {color: #E1E100}	/* 鼠标移动到链接上 */
-a:active {color: #80FFFF}	/* 选定的链接 */
+
+a:link {color: #FFFFFF; text-decoration:none;}		/* 未访问的链接 */
+a:visited {color: #B9B9FF; text-decoration:none;}	/* 已访问的链接 */
+a:hover {color: #E1E100; font-weight: bold;}	/* 鼠标移动到链接上 */
+a:active {color: #80FFFF; font-weight: bold;}	/* 选定的链接 */
+
+#ctop{
+	
+	top: -5px;
+	position: absolute;
+	left: 10%;
+	
+}
+#ctop ul{
+	margin:0;
+	padding:0;
+	text-align: center;
+	
+}
+
+#ctop ul li{
+	float: left;
+	list-style-type: none;
+}
+#ctop ul li a{
+	display: block;
+	width: 200px;
+	color: #00ffff;
+	text-decoration: none;
+	height:50px;
+	line-height: 50px;
+	
+}
+#ctop ul li a:hover{
+	
+	background: linear-gradient(#000093, #00CACA);
+}
 </style>
 </head>
 <body>
@@ -40,7 +73,15 @@ a:active {color: #80FFFF}	/* 选定的链接 */
 			<img src="/images/ktzj.png" style="width: 100px;height: 45px;">
 		</div>
 		
-		<div ></div>
+		<div id="ctop">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">原木框条</a></li>
+				<li><a href="#">最新资讯</a></li>
+				<li><a href="#">客户论坛</a></li>
+				
+			</ul>
+		</div>
 		
 		<div id="rtop">
 			<table id="tb">
@@ -48,7 +89,7 @@ a:active {color: #80FFFF}	/* 选定的链接 */
 					<td><font color="#ffffff">
 						<a href="http://localhost:8080/login.html" id="login-front" >登录</a>
 						&nbsp;|&nbsp;
-						<a href="http://localhost:8080/regist.html" id="regist-front">注册</a>
+						<a href="http://localhost:8080/regist.html" id="regist-front">购物车</a>
 						</font>
 					</td>
 				</tr>	
