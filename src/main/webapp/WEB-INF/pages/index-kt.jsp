@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>框条之家|全国前100强框条市场®新疆最大框条批发集散市场</title>
+<title>框条之家|原木框条</title>
 <style type="text/css">
 #lefttop{
 	weith: 100px; 
@@ -75,10 +75,10 @@ a:active {color: #80FFFF; font-weight: bold;}	/* 选定的链接 */
 		
 		<div id="ctop">
 			<ul>
-				<li><a id="load-home">首页</a></li>
-				<li><a id="load-kt">原木框条</a></li>
-				<li><a id="load-?">最新资讯</a></li>
-				<li><a id="load-comment">客户论坛</a></li>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">原木框条</a></li>
+				<li><a href="#">最新资讯</a></li>
+				<li><a href="#">客户论坛</a></li>
 				
 			</ul>
 		</div>
@@ -99,25 +99,4 @@ a:active {color: #80FFFF; font-weight: bold;}	/* 选定的链接 */
 	<div class="iCenter"></div>
 	<div class="iBottom"></div>
 </body>
-<!-- jQuery 3 -->
-<script src="jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- AdminLTE App -->
-<script src="js/adminlte.min.js"></script>
-<script type="text/javascript">
-	$(function(){
-		doLoadUI("load-home","index.do");
-		doLoadUI("load-kt","kt/listUI");
-		doLoadUI("load-comment","comment/ListUI");
-	})
-	function doLoadUI(id,url){
-		$(id).click(function(){
-			$(".iCenter").load(url,function(){
-				$(".iCenter").removeData();
-			});
-		});
-	}
-</script>
-
 </html>
