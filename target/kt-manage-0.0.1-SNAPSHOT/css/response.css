@@ -1,0 +1,123 @@
+@media screen and (max-width: 1366px){
+    .header {
+        padding: 10px 50px 10px;
+    }
+    .flag-box{
+        right: 50px;
+    }
+    .type-content{
+        padding: 0 40px;
+    }
+    .product-list{
+        padding: 0 25px;
+    }
+    .product-item-box{
+        width: 25%;
+    }
+    .product-image{
+        height: 270px;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .header {
+        padding: 10px 30px 10px;
+    }
+    .flag-box{
+        right: 30px;
+    }
+    .nav {
+        padding: 0 10px;
+    }
+
+    .type-content{
+        padding: 0 20px;
+    }
+    .product-list{
+        padding: 0 5px;
+    }
+
+    .product-item-box{
+        width: 33.33%;
+    }
+    .product-image{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .footer-container{
+        display: none;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .header{
+        padding: 10px;
+    }
+    .header-logo img{
+        width: 180px;
+    }
+    .header-right{
+        line-height: 35px;
+        position: absolute;
+        right: 10px;
+        width: 50%;
+        word-break: keep-all;
+    }
+    .header-right .icon{
+        display: none;
+    }
+    .language-btn{
+        display: none;
+    }
+    .header-title{
+        display: none;
+    }
+    .nav ul{
+        text-align: justify;
+    }
+    .nav li{
+        width: 25%;
+        text-align: center;
+    }
+    .nav li:last-child{
+        width: 75%!important;
+    }
+    .type-content{
+        padding: 0;
+    }
+    .swiper-container .pagination{
+        margin: 0;
+        height: 20px;
+        left: 10px;
+        bottom: 5px;
+    }
+    .swiper-container .pagination .swiper-pagination-switch{
+        margin-right: 5px;
+        width: 8px;
+        height: 8px;
+    }
+    .btn-box {
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+    }
+    .title-image-item{
+        width: 45%;
+        margin-bottom: 10px;
+    }
+    .zhanhui h1 a{
+        font-size: 30px;
+    }
+    .product-item-box{
+        padding: 0;
+        width: 50%;
+    }
+    .product-image{
+        height: 230px;
+    }
+}

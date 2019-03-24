@@ -11,4 +11,8 @@ public class IndexController {
 		return "index";
 	}
 	
+	@RequestMapping("/ss2")
+	public String sspage() {
+		return "someone/ss2";
+	}
 }

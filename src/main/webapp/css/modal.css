@@ -1,0 +1,139 @@
+.message-box__wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 6001;
+}
+.message-box__wrapper:after {
+
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+}
+.message-box {
+
+    display: inline-block;
+    width: 420px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ebeef5;
+    font-size: 18px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    text-align: left;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+.message-box__header {
+    position: relative;
+    padding: 15px;
+    padding-bottom: 10px;
+}
+.message-box__title {
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1;
+    color: #303133;
+}
+.message-box__headerbtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+.message-box__headerbtn .message-box__close {
+    font-style: normal;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 600;
+    color: #909399;
+}
+.message-box__headerbtn:focus .message-box__close, .message-box__headerbtn:hover .message-box__close {
+    color: #409eff;
+}
+
+.message-box__content {
+    position: relative;
+    padding: 10px 15px;
+    color: #606266;
+}
+.message-box__message {
+    font-size: 16px;
+}
+.message-box__status {
+    vertical-align: text-bottom;
+    font-size: 24px;
+}
+.message-box__btns {
+    padding: 5px 15px 0;
+    text-align: right;
+}
+
+.v-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background: #000;
+    z-index: 6000;
+}
+
+.loading-box{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    opacity: .5;
+    z-index: 5100;
+}
+.loading-box img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+}
+
+.alert-box{
+    display: none;
+    position: fixed;
+    top: 140px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5555;
+}
+.alert-box .alert{
+    display: inline-block;
+}
+.alert-box .alert .glyphicon{
+    font-size: 24px;
+    vertical-align: sub;
+    margin-right: 20px;
+}
+.alert-box .alert .alert-content{
+    font-size: 18px;
+}
+
+
+.modal-body>img{
+    width: 100%;
+}
